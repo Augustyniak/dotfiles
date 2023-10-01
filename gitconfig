@@ -1,0 +1,25 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Rafal Augustyniak
+	email = rafal@bitdrift.io
+[core]
+  	editor = nvim
+[alias]
+        aa = add -all
+        amend = commit --amend
+        co = checkout
+        cp = cherry-pick
+        cps = cherry-pick --continue
+        di = diff
+        dc = diff --cached
+        which = branch -a --contains
+        last = log -1 HEAD
+        ccount = rev-list --left-right --count
+        st = status
+        hh = rev-parse HEAD
+        log1 = log --pretty=oneline
+        hammer = commit --allow-empty -m ":hammer:"
