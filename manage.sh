@@ -3,6 +3,7 @@
 files=(\
   config \
   gitconfig \
+  local \
 )
 
 custom_path() {
