@@ -40,6 +40,8 @@ set autoindent
 
 let mapleader = ","
 
+set clipboard=unnamed
+
 "[scrooloose/nedtree]
 nnoremap <leader>a :NERDTreeToggle<cr>
 
