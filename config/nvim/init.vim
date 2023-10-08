@@ -4,19 +4,19 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'bling/vim-airline'
 Plug 'tomasr/molokai'
-"Show git changes in the sign column
+" Show git changes in the sign column
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
-"Leader C space for commeting a given line
+" Leader C space for commeting a given line
 Plug 'scrooloose/nerdcommenter'
-"Highlihgts trailing whitespace
+" Highlihgts trailing whitespace
 Plug 'junegunn/fzf'
-"Plug 'bronson/vim-trailing-whitespace'
+" Plug 'bronson/vim-trailing-whitespace'
 Plug 'ntpeters/vim-better-whitespace'
-"Make yanked region apparent
+" Make yanked region apparent
 Plug 'machakann/vim-highlightedyank'
 call plug#end()
-"[tomasr/molokai]
+" [tomasr/molokai]
 let g:molokai_original = 1
 colorscheme molokai
 
@@ -27,16 +27,16 @@ set cursorline
 set ruler
 
 set number
-"set relativenumber
+" set relativenumber
 
-"Works just fine in many terminals
+" Works just fine in many terminals
 set mouse=a
 
-"Display hidden characters
+" Display hidden characters
 set list
 set listchars=tab:▸\ ,eol:¬
 
-"lines
+" Lines
 set wrap
 set textwidth=110
 set colorcolumn=110
@@ -48,40 +48,39 @@ vnoremap / /\v
 set ignorecase
 set smartcase
 
-"apparently this works well
+" Apparently this works well
 set autoindent
 
-"sort selected lines
+" Sort selected lines
 vnoremap <leader>s :'<,'>!sort -f<cr>
 
-"tab settings
+" Tab settings
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 set expandtab
 set smarttab
 
-"fzf
+" FZF
 nnoremap <C-p> :FZF<cr>
 "
 let mapleader = ","
 
-"faster scroll
+" Faster scroll
 set scrolljump=-15
 
-"integration with macOS clipboard
+" Integration with macOS clipboard
 set clipboard=unnamed
 
-"undo that works after re-entering a file
+" Undo that works after re-entering a file
 set undofile
 set undodir=/tmp
 
-"[scrooloose/nerdcommenter]
+" [scrooloose/nerdcommenter]
 let g:AutoPairsMultilineClose = 0
 let g:AutoPairsMapSpace = 0
 
-"[scrooloose/nedtree]
+" [scrooloose/nedtree]
 nnoremap <leader>a :NERDTreeToggle<cr>
-
 
 nnoremap <leader>space :nohlsearch<cr>
