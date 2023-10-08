@@ -4,10 +4,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'bling/vim-airline'
 Plug 'tomasr/molokai'
+"Show git changes in the sign column
+Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
-"leader C space for commeting a given line
+"Leader C space for commeting a given line
 Plug 'scrooloose/nerdcommenter'
-"highlihgts trailing whitespace
+"Highlihgts trailing whitespace
 Plug 'junegunn/fzf'
 "Plug 'bronson/vim-trailing-whitespace'
 Plug 'ntpeters/vim-better-whitespace'
