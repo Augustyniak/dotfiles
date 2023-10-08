@@ -11,6 +11,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf'
 "Plug 'bronson/vim-trailing-whitespace'
 Plug 'ntpeters/vim-better-whitespace'
+"Make yanked region apparent
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 "[tomasr/molokai]
 let g:molokai_original = 1
@@ -37,6 +39,12 @@ set wrap
 set textwidth=110
 set colorcolumn=110
 set formatoptions=qrnj1
+
+"search
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
 
 "apparently this works well
 set autoindent
