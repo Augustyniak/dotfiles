@@ -49,6 +49,9 @@ set smartcase
 "apparently this works well
 set autoindent
 
+"sort selected lines
+vnoremap <leader>s :'<,'>!sort -f<cr>
+
 "tab settings
 set shiftwidth=4
 set tabstop=4
