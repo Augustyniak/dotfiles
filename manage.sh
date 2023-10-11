@@ -4,6 +4,7 @@ files=(\
   config \
   gitconfig \
   local \
+  tmux.conf \
 )
 
 custom_path() {
