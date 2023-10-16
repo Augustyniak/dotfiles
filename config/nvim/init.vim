@@ -20,8 +20,10 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'mileszs/ack.vim'
 " Plug 'bronson/vim-trailing-whitespace'
 Plug 'ntpeters/vim-better-whitespace'
-" Make yanked region apparent
-Plug 'machakann/vim-highlightedyank'
+" Git commands from within vim
+Plug 'tpope/vim-fugitive'
+" GH links for selected source code lines
+Plug 'tpope/vim-rhubarb'
 call plug#end()
 
 let mapleader = ","
