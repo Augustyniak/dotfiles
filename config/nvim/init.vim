@@ -1,8 +1,11 @@
 call plug#begin()
 
 Plug 'scrooloose/nerdtree'
+" Improves experience for moving between tmux and nvim buffers
 Plug 'christoomey/vim-tmux-navigator'
+" Make current line apparent
 Plug 'bling/vim-airline'
+" Theme
 Plug 'tomasr/molokai'
 " Show git changes in the sign column
 Plug 'airblade/vim-gitgutter'
@@ -11,6 +14,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 " Highlihgts trailing whitespace
 Plug 'junegunn/fzf'
+" Make yanked region apparent
+Plug 'machakann/vim-highlightedyank'
 " Better search
 Plug 'mileszs/ack.vim'
 " Plug 'bronson/vim-trailing-whitespace'
