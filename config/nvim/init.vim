@@ -9,7 +9,7 @@ Plug 'uarun/vim-protobuf'
 Plug 'scrooloose/nerdtree'
 " Improves experience for moving between tmux and nvim buffers
 Plug 'christoomey/vim-tmux-navigator'
-" Make current line apparent
+" Status bar
 Plug 'bling/vim-airline'
 " Theme
 Plug 'tomasr/molokai'
