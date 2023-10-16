@@ -78,6 +78,19 @@ if executable('rg')
     nnoremap <leader>r :Ack! 
 endif
 
+" Toggle quickfix buffer
+nnoremap <leader><leader> :call ToggleQuickfix()<cr>
+function! ToggleQuickfix()
+    for buffer in tabpagebuflist()
+        if bufname(buffer) == ''
+            cclose
+            return
+        endif
+    endfor
+
+    copen
+endfunction
+
 " Faster scroll
 set scrolljump=-15
 
