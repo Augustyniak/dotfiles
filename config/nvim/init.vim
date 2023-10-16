@@ -1,5 +1,11 @@
 call plug#begin()
-
+" Syntax
+Plug 'keith/swift.vim'
+Plug 'fatih/vim-go'
+Plug 'cespare/vim-toml'
+Plug 'rust-lang/rust.vim'
+Plug 'uarun/vim-protobuf'
+" File hierarchy
 Plug 'scrooloose/nerdtree'
 " Improves experience for moving between tmux and nvim buffers
 Plug 'christoomey/vim-tmux-navigator'
