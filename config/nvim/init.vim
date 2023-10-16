@@ -11,16 +11,21 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 " Highlihgts trailing whitespace
 Plug 'junegunn/fzf'
+" Better search
+Plug 'mileszs/ack.vim'
 " Plug 'bronson/vim-trailing-whitespace'
 Plug 'ntpeters/vim-better-whitespace'
 " Make yanked region apparent
 Plug 'machakann/vim-highlightedyank'
 call plug#end()
-" [tomasr/molokai]
+
+let mapleader = ","
+
+" tomasr/molokai
 let g:molokai_original = 1
 colorscheme molokai
 
-"[scrooloose/nedcommenter]
+" scrooloose/nedcommenter
 let g:NERDCustomDelimeters = { 'swift': { 'left': '// '} }
 let g:NERDDefaultAlign = 'left'
 set cursorline
@@ -42,7 +47,7 @@ set textwidth=110
 set colorcolumn=110
 set formatoptions=qrnj1
 
-"search
+" Search
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -62,9 +67,16 @@ set expandtab
 set smarttab
 
 " FZF
-nnoremap <C-p> :FZF<cr>
-"
-let mapleader = ","
+if executable('fzf')
+    nnoremap <C-p> :FZF<cr>
+endif
+
+" mileszs/ack.vim
+if executable('rg')
+    let g:ackprg = '/opt/homebrew/bin/rg --vimgrep'
+    vnoremap <leader>r :'<,'>Ack!<cr>
+    nnoremap <leader>r :Ack! 
+endif
 
 " Faster scroll
 set scrolljump=-15
@@ -76,11 +88,11 @@ set clipboard=unnamed
 set undofile
 set undodir=/tmp
 
-" [scrooloose/nerdcommenter]
+" scrooloose/nerdcommenter
 let g:AutoPairsMultilineClose = 0
 let g:AutoPairsMapSpace = 0
 
-" [scrooloose/nedtree]
+" scrooloose/nedtree
 nnoremap <leader>a :NERDTreeToggle<cr>
 
 nnoremap <leader>space :nohlsearch<cr>
